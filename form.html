@@ -7,39 +7,49 @@
   </head>
   <body>
     <br />
-    <form action="post">
-      <label for="name">Siapa nama anda?</label><br />
-      <input type="text" name="nama" placeholder="" />
-      <br />
-      <label for="umur">Berapa umur anda?</label><br />
-      <input type="text" name="umur" placeholder="" />
-      <br />
-      <label for="desc2">Apa jenis kelamin anda?</label><br />
-      <input type="radio" name="laki-laki" id="laki" />
-      <label for="genderLk">laki-laki</label>
-      <input type="radio" name="perempuan" id="pr" />
-      <label for="genderPr">perempuan</label><br />
-      <label for="desc2">Apakah anda perokok?</label><br />
-      <input type="radio" name="ya" id="ya" />
-      <label for="true">Ya</label>
-      <input type="radio" name="tidak" id="tidak" />
-      <label for="false">Tidak</label><br />
-      <label for="rokok"
-        >Jika anda perokok, rokok apa yang pernah anda coba</label
-      ><br />
-      <input type="checkbox" name="gudang" id="gudang" />
-      <label for="garam">Gudang Garam Filter</label><br />
-      <input type="checkbox" name="lucky" id="lucky" />
-      <label for="strike">Lucky Strike</label><br />
-      <input type="checkbox" name="marlboro" id="marlboro" />
-      <label for="mb">Marlboro</label><br />
-      <input type="checkbox" name="ess" id="ess" />
-      <label for="esse">Esse</label>
+    <form action="#" method="get">
+      <div>
+        <label for="name">Siapa nama anda?</label><br />
+        <input type="text" name="nama" placeholder="" required/>
+        <br />
+      </div>
+      <div>
+        <label for="umur">Berapa umur anda?</label><br />
+        <input type="text" name="umur" placeholder="" required />
+        <br />
+      </div>
+      <div>
+        <label for="desc2">Apa jenis kelamin anda?</label><br />
+        <input type="radio" name="jenis-kelamin" id="laki" value="laki-laki" required/>
+        <label for="genderLk">laki-laki</label>
+        <input type="radio" name="jenis-kelamin" id="pr" value="perempuan" required/>
+        <label for="genderPr">perempuan</label><br />
+      </div>
+      <div>
+        <label for="desc2">Apakah anda perokok?</label><br />
+        <input type="radio" name="rokok" id="ya" value="ya" required/>
+        <label for="true">Ya</label>
+        <input type="radio" name="rokok" id="tidak" value="tidak" required/>
+        <label for="false">Tidak</label><br />
+      </div>
+      <div>
+        <label for="rokok"
+          >Jika anda perokok, rokok apa yang pernah anda coba</label
+        ><br />
+        <input type="checkbox" name="jenis-rokok" id="gudang" value="Gudang Garam" />
+        <label for="garam">Gudang Garam Filter</label><br />
+        <input type="checkbox" name="jenis-rokok" id="lucky" value="Lucky Strike" />
+        <label for="strike">Lucky Strike</label><br />
+        <input type="checkbox" name="jenis-rokok" id="marlboro" value="Marlboro" />
+        <label for="mb">Marlboro</label><br />
+        <input type="checkbox" name="jenis-rokok" id="ess" value="Esse" />
+        <label for="esse">Esse</label>
+      </div>
 
       <br />
       <br />
-      <button type="submit">Submit</button>
-      <button type="">Reset</button>
+      <button type="submit"><a href="hasilSurvey.html">Submit</a></button>
+      <button type="reset">Reset</button>
     </form>
   </body>
 </html>
